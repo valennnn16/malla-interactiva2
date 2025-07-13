@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f1fb;
+  padding: 20px;
+  color: #3d0066;
+}
+h1 {
+  text-align: center;
+  color: #5b0080;
+}
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.course {
+  border: 2px solid #a05ac9;
+  background-color: #e7d8f5;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 220px;
+  text-align: center;
+  transition: background-color 0.3s;
+  opacity: 0.5;
+  font-size: 14px;
+}
+.course.unlocked {
+  opacity: 1;
+}
+.course.completed {
+  background-color: #c27cd7;
+  color: white;
+  border-color: #7e3ea1;
+}
+.ciclo {
+  margin-bottom: 30px;
+}
+.ciclo h2 {
+  color: #7e3ea1;
+  text-align: center;
+}
+button {
+  background-color: #7e3ea1;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5b0080;
+}
