@@ -23,7 +23,52 @@ const cursos = [
     { nombre: "Taller de Lenguaje, Técnicas y Narrativas Audiovisuales", codigo: "TN305" },
     { nombre: "Psicología y Comportamiento", codigo: "PC306" }
   ] },
-  // puedes continuar el resto si deseas, de la misma forma...
+  { ciclo: "Cuarto ciclo", ramos: [
+    { nombre: "Herramientas Informáticas", codigo: "HI401" },
+    { nombre: "Storytelling", codigo: "ST402" },
+    { nombre: "Taller de Redacción", codigo: "TR403" },
+    { nombre: "Taller de Lenguaje y Técnicas de Diseño", codigo: "TL404" },
+    { nombre: "Teoría de la Comunicación", codigo: "TC405" },
+    { nombre: "Taller de Edición Digital", codigo: "ED406" },
+    { nombre: "Responsabilidad Social", codigo: "RS407" }
+  ] },
+  { ciclo: "Quinto ciclo", ramos: [
+    { nombre: "Semiótica", codigo: "SM501" },
+    { nombre: "Taller de Design Thinking e Innovación en Comunicaciones", codigo: "DT502" },
+    { nombre: "Diseño y Producción de Narrativas Audiovisuales", codigo: "DN503" },
+    { nombre: "Taller de Big Data y Comunicación", codigo: "BD504" },
+    { nombre: "Taller de Guión Audiovisual Transmedia", codigo: "GT505" }
+  ] },
+  { ciclo: "Sexto ciclo", ramos: [
+    { nombre: "Empleabilidad", codigo: "EM601" },
+    { nombre: "Proyecto Social", codigo: "PS602" },
+    { nombre: "Metodología de la Investigación", codigo: "MI603" },
+    { nombre: "Taller de Producción Radial Digital", codigo: "RD604" },
+    { nombre: "Taller de Fotografía y Estética Audiovisual", codigo: "FA605" }
+  ] },
+  { ciclo: "Séptimo ciclo", ramos: [
+    { nombre: "Legislación y Normativa en Comunicaciones", codigo: "LC701" },
+    { nombre: "Gestión de Marketing Digital y Redes Sociales", codigo: "MK702" },
+    { nombre: "Diseño de Sonido Digital", codigo: "SD703" },
+    { nombre: "Taller de Documental Transmedia", codigo: "DT704" },
+    { nombre: "Taller de Dirección y Producción de Informativo", codigo: "DI705" }
+  ] },
+  { ciclo: "Octavo ciclo", ramos: [
+    { nombre: "Prácticas Preprofesionales", codigo: "PP801" },
+    { nombre: "Taller de Dirección y Producción de Ficción", codigo: "TF802" },
+    { nombre: "Taller de Diseño y Producción de Medios Interactivos", codigo: "MI803" }
+  ] },
+  { ciclo: "Noveno ciclo", ramos: [
+    { nombre: "Tesis", codigo: "TS901" },
+    { nombre: "Gestión del Entretenimiento", codigo: "GE902" },
+    { nombre: "Taller Transmedial 1", codigo: "TT903" },
+    { nombre: "Taller de Dirección y Producción Publicitaria Audiovisual", codigo: "PA904" }
+  ] },
+  { ciclo: "Décimo ciclo", ramos: [
+    { nombre: "Trabajo de Investigación", codigo: "TI1001" },
+    { nombre: "Taller Transmedial 2", codigo: "TT1002" },
+    { nombre: "Dirección de Proyectos Audiovisuales", codigo: "DP1003" }
+  ] }
 ];
 
 const aprobados = new Set();
