@@ -7,39 +7,47 @@ body {
 h1 {
   text-align: center;
   color: #5b0080;
+  font-size: 22px;
 }
-#courses {
+.course-table {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.ciclo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 10px;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+.ciclo h2 {
+  min-width: 180px;
+  color: #7e3ea1;
+  text-align: right;
+  font-size: 16px;
 }
 .course {
-  border: 2px solid #a05ac9;
-  background-color: #e7d8f5;
+  border: 2px solid #d6b700;
+  background-color: #fff4b3;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
-  width: 220px;
+  min-width: 220px;
   text-align: center;
-  transition: background-color 0.3s;
-  opacity: 0.5;
+  transition: background-color 0.3s, text-decoration 0.3s;
   font-size: 14px;
+  opacity: 0.5;
 }
 .course.unlocked {
   opacity: 1;
 }
 .course.completed {
-  background-color: #c27cd7;
+  background-color: #a05ac9;
   color: white;
   border-color: #7e3ea1;
-}
-.ciclo {
-  margin-bottom: 30px;
-}
-.ciclo h2 {
-  color: #7e3ea1;
-  text-align: center;
+  text-decoration: line-through;
 }
 button {
   background-color: #7e3ea1;
