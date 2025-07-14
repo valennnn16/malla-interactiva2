@@ -3,41 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Malla Interactiva</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-    .semestre {
-      margin-bottom: 20px;
-    }
-    .curso {
-      display: inline-block;
-      background-color: #d1e8ff;
-      margin: 5px;
-      padding: 10px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .curso:hover {
-      background-color: #a7d3ff;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Malla Interactiva</h1>
-  
-  <div class="semestre">
-    <h2>1er Semestre</h2>
-    <div class="curso" onclick="alert('Curso: Matemática Básica\nCréditos: 4')">Matemática Básica</div>
-    <div class="curso" onclick="alert('Curso: Comunicación\nCréditos: 3')">Comunicación</div>
+  <h1>Malla Interactiva de Comunicaciones</h1>
+  <div style="text-align:center; margin-bottom: 20px;">
+    <button onclick="reiniciarMalla()">🔄 Reiniciar Malla</button>
   </div>
-  
-  <div class="semestre">
-    <h2>2do Semestre</h2>
-    <div class="curso" onclick="alert('Curso: Álgebra\nCréditos: 4')">Álgebra</div>
-    <div class="curso" onclick="alert('Curso: Historia\nCréditos: 3')">Historia</div>
-  </div>
+  <div id="malla"></div>
+  <script src="script.js"></script>
 </body>
 </html>
