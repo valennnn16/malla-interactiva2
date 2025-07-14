@@ -76,21 +76,28 @@ const aprobados = new Set();
 function crearMalla() {
   const contenedor = document.getElementById("malla");
   contenedor.innerHTML = "";
+  contenedor.className = "course-table";
+
   cursos.forEach(({ ciclo, ramos }) => {
     const divCiclo = document.createElement("div");
     divCiclo.className = "ciclo";
-    divCiclo.innerHTML = `<h2>${ciclo}</h2><div class="cursos"></div>`;
-    contenedor.appendChild(divCiclo);
+    const titulo = document.createElement("h2");
+    titulo.textContent = ciclo;
+    divCiclo.appendChild(titulo);
 
-    ramos.forEach(({ nombre, requisitos }) => {
+    ramos.forEach(({ nombre, requisitos, codigo }) => {
       const div = document.createElement("div");
       div.className = "course";
       div.textContent = nombre;
+      div.title = codigo;
       div.dataset.nombre = nombre;
       div.onclick = () => aprobarRamo(div, requisitos);
-      divCiclo.querySelector(".cursos").appendChild(div);
+      divCiclo.appendChild(div);
     });
+
+    contenedor.appendChild(divCiclo);
   });
+
   actualizarEstado();
 }
 
